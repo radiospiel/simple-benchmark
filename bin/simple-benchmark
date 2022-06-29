@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require 'bundler/inline'
+
+# gemfile do
+#   source 'https://rubygems.org'
+#
+#   gem "simple-benchmark", path: ".."
+# end
+
+# require Simple::Benchmark::CLI
+require "simple/benchmark"
+require "simple/benchmark/cli"
+
+Simple::CLI.run!(Simple::Benchmark::CLI)
